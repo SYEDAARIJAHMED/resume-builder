@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
-import { useRouter } from 'next/navigation';
+
 
 const MakeResumePage: React.FC = () => {
   // State hooks for user inputs
@@ -17,7 +17,7 @@ const MakeResumePage: React.FC = () => {
   const [profilePic, setProfilePic] = useState<string | null>(null); // state to hold profile picture
   const [showResume, setShowResume] = useState(false);
 
-  const router = useRouter();
+
 
   // Function to generate the resume
   const generateResume = () => {
